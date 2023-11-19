@@ -33,49 +33,13 @@ header {
 
 }
 
-.menu ul {
+.logo {
     display: flex;
+    margin: auto;
 }
 
-.menu li {
-    list-style: none;
-    padding: 10px;
-    font-size: 20px;
-}
-
-.menu li a:hover {
-    background-color: rgb(113, 231, 255);
-    border-radius: 10px;
-}
-
-.logo a {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.btn-home button {
-    padding: 10px 30px;
-    background-color: rgb(113, 231, 255);
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.btn-home button:hover {
-    animation: btn 0.8s alternate infinite
-}
-
-@keyframes btn {
-    from {
-        transform: scale(1);
-    }
-
-    to {    
-        transform: scale(1.1);
-    }
+.logo img {
+    max-width: 200px;
     
 }
 
@@ -93,7 +57,7 @@ header {
 .main {
     display: flex;
     align-items: center;
-    padding: 6.8% 10%;
+    padding: 0% 150px;
     background-color: rgb(113, 186, 255);
     box-shadow: 0px 0px 15px 1px #000;
 
@@ -101,7 +65,7 @@ header {
 }
 
 .img img {
-    max-width: 600px;
+    max-width: 550px;
     animation: flutuar 1.0s alternate infinite;
 }
 
@@ -111,7 +75,7 @@ header {
 }
 
 .txt p {
-    font-size: 1.3rem
+    font-size: 15px
 }
 
 @keyframes flutuar {
@@ -128,7 +92,7 @@ header {
 
 .about {
     padding: 40px;
-    margin: 5%;
+    margin: 5% 0%;
     padding-top: 20px;
 }
 
@@ -151,6 +115,14 @@ header {
     font-size: 35px;
 }
 
+.tabela p {
+    font-size: 35px;
+}
+
+
+.tabela table {
+    font-size: 15px ;
+}
 .medicos {
     display: flex;
     justify-content: space-between;
@@ -295,4 +267,43 @@ legend {
     background-color: #000;
     color: white;
     text-align: center;
+}
+
+
+@media screen and (max-width: 1230px){
+    .main {
+        padding: 0 100px;
+    }
+
+    .img img {
+        max-width: 450px;
+    }
+
+    .tabela p{
+        font-size: 20px;
+    }
+
+    .tabela table {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .img img {
+        max-width: 350px;
+    }
+
+    .txt h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .txt p {
+        font-size: 10px;
+    }
+
+    .txt h2 {
+        font-size: 20px;
+    }
 }
