@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: 0;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/*  HEADER */
+
+header {
+    width: 100%;  
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+    
+}
+
+.header-content a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.menu li a:hover {
+    background-color: rgb(113, 231, 255);
+    border-radius: 10px;
+}
+
+.logo a {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-home button {
+    padding: 10px 30px;
+    background-color: rgb(113, 231, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-home button:hover {
+    animation: btn 0.8s alternate infinite
+}
+
+@keyframes btn {
+    from {
+        transform: scale(1);
+    }
+
+    to {    
+        transform: scale(1.1);
+    }
+    
+}
+
+/* HEADER */
+
+
+
+/* HOME */
+
+.home {
+    position: relative;
+    
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    padding: 6.8% 10%;
+    background-color: rgb(113, 186, 255);
+    box-shadow: 0px 0px 15px 1px #000;
+
+    
+}
+
+.img img {
+    max-width: 600px;
+    animation: flutuar 1.0s alternate infinite;
+}
+
+.txt h2 {
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.txt p {
+    font-size: 1.3rem
+}
+
+@keyframes flutuar {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.02);
+    }
+}
+
+/* HOME */
+
+.about {
+    padding: 40px;
+    margin: 5%;
+    padding-top: 20px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.info p {   
+    padding-right: 10%;
+    font-size: 35px;
+}
+
+.medicos {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+
+.medicos p {
+    padding-right: 10%;
+    font-size: 35px;
+}
+.medicamentos {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+
+.medicamentos p {
+    padding-right: 10%;
+    font-size: 35px;
+}
+.agendamento {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+
+.agendamento p {
+    padding-right: 10%;
+    font-size: 35px;
+}
+
+.tbhosp {
+    font-size: 15px;
+    display: flex;
+    margin: auto;
+    box-shadow: 0px 0px 15px 1px #000;
+}
+
+.tbhosp td {
+    padding: 5px 10px;
+}
+
+.tbpaci {
+    font-size: 15px;
+    display: flex;
+    margin: auto;
+    box-shadow: 0px 0px 15px 1px #000;
+}
+
+.tbpaci td {
+    padding: 5px 10px;
+}
+
+.tbmedi {
+    font-size: 15px;
+    display: flex;
+    margin: auto;
+    box-shadow: 0px 0px 15px 1px #000;
+}
+
+.tbmedi td {
+    padding: 5px 10px;
+}
+
+.tbagend {
+    font-size: 15px;
+    display: flex;
+    margin: auto;
+    box-shadow: 0px 0px 15px 1px #000;
+}
+
+.tbagend td {
+    padding: 5px 10px;
+}
+
+.form {
+    background-color: rgb(113, 186, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 150px;
+    box-shadow: 0px 0px 15px 1px #000;
+}
+
+.form form {
+    margin: auto;
+    box-shadow: 0px 0px 15px 1px #000;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+legend {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+
+.txt-form input {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+.txt-form {
+    padding: 5px;
+}
+
+.btn-form {
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-form input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(113, 231, 255);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-form input:hover {
+    animation: btn-flute 0.8s alternate infinite;
+}
+
+@keyframes btn-flute {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.footer {
+    padding: 50px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}

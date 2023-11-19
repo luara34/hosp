@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Luviena</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>		
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>  
+    
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyCftSYc_le8WYoQkHHDatmw-yPmf6jI4y4",
+            authDomain: "hospital-fb9c4.firebaseapp.com",
+            databaseURL: "https://hospital-fb9c4-default-rtdb.firebaseio.com",
+            projectId: "hospital-fb9c4",
+            storageBucket: "hospital-fb9c4.appspot.com",
+            messagingSenderId: "563824184766",
+            appId: "1:563824184766:web:632c890a2e36b044b87def"
+        };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="consulta.js"></script>
+</head>
+<body>
+    <div class="home">
+        <header >
+            <nav class="header-content container">
+                <div class="logo">
+                    <a href="#"><img src="" alt="">HOSPITAL LUVIENA</a>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="info.html">Tabelas</a></li>
+                        <li><a href="cont.html">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-home">
+                    <a href="#"><button>Contato</button></a>
+                </div>
+            </nav>
+
+            
+        </header>
+
+        <main class="main container">
+            <div class="txt">
+                <h2>Hopistal Luviena</h2>
+                <p>Bem-vindo ao Hospital Luviena, um centro de saúde comprometido com o bem-estar da nossa comunidade. Localizado em um ambiente moderno e acolhedor, oferecemos cuidados médicos de qualidade, com uma equipe dedicada a proporcionar tratamentos eficazes e compassivos. No Hospital Luviena, priorizamos a saúde, o conforto e a recuperação dos nossos pacientes, buscando sempre superar expectativas. Estamos aqui para cuidar de você.</p>
+            </div>
+            <div class="img">
+                  <img src="https://vest.doctum.edu.br/wp-content/uploads/2022/10/enfermagem-person.png" alt="">
+            </div>
+        </main>
+
+        <div class="about">
+            <h2>TABELA PRINCIPAL</h2>
+            
+            <div class="info">
+                <p>Tabela dos médicos</p>
+
+                <table class="tbhosp" border="1px solid">
+                    <tr>
+                        <td></td>
+                        <td>MÉDICO</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+
+            <div class="medicos">
+                <p>Tabela dos pacientes</p>
+
+                <table class="tbpaci" border="1px solid">
+                    <tr>
+                        <td></td>
+                        <td>PACIENTES</td>
+                        <td>PROBLEMA</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr> 
+
+            <div class="medicamentos">
+                <p>Tabela dos medicamentos</p>
+
+                <table class="tbmedi" border="1px solid">
+                    <tr>
+                        <td></td>
+                        <td>MEDICAMENTOS</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
+            <div class="agendamento">
+                <p>Tabela dos agendamentos</p>
+
+                <table class="tbagend" border="1px solid">
+                    <tr>
+                        <td></td>
+                        <td>NOME</td>
+                        <td>DATA E HORA</td>
+                        <td>SERVIÇO</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="form">
+            <form action="">
+                <legend>Agende seu horário</legend>
+
+                <div class="txt-form">
+                    <label for=""><input type="text" placeholder="Seu nome"></label>
+                </div>
+                <div class="txt-form">
+                    <label for=""><input type="text" placeholder="Seu telefone"></label>
+                </div>
+                <div class="txt-form">
+                    <label for=""><input type="text" placeholder="Seu problema"></label>
+                </div>
+
+                <div class="btn-form">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+
+        <div class="footer">
+            <footer>
+                <h3>&copy Copyright - 2023 Hospital Luviena todos os direitos reservados</h3>
+            </footer>
+        </div>
+
+    </div>
+
+    
+    
+</body>
+</html>
